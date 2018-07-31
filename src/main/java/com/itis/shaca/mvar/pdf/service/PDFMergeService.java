@@ -4,6 +4,7 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.util.Optional;
 
+import org.apache.commons.io.IOUtils;
 import org.apache.pdfbox.io.MemoryUsageSetting;
 import org.apache.pdfbox.multipdf.PDFMergerUtility;
 import org.slf4j.Logger;
@@ -42,6 +43,8 @@ public class PDFMergeService {
 
 			mergePdf.mergeDocuments(MemoryUsageSetting.setupMainMemoryOnly());
 
+		
+			
 			logger.debug("Documents merged");
 		} catch (Exception e) {
 			logger.error(e.toString());
