@@ -31,7 +31,7 @@
         </Root>
  
         <!-- LOG "com.baeldung*" at TRACE level -->
-        <Logger name="com.itis.shaca.monitor" level="trace"></Logger>
+        <Logger name="com.itis.shaca.mvar.pdf" level="trace"></Logger>
     </Loggers>
  
 </Configuration>

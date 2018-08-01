@@ -3,10 +3,10 @@ package com.itis.shaca.mvar.pdf.repositories;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
-import com.itis.shaca.mvar.pdf.entities.Template;
+import com.itis.shaca.mvar.pdf.entities.MVARReportOutput;
 
 @Repository
-public interface TemplateRepository extends CrudRepository<Template, Integer> {
-
+public interface MVARReportOutputRepository  extends CrudRepository<MVARReportOutput, Integer>{
 
 }
+
