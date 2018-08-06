@@ -42,8 +42,9 @@ public class PDFMergeFileController {
 		ByteArrayOutputStream outputStream = pdfMergeService.download(crashId);
 		outputStream.writeTo(response.getOutputStream());
 
+		String fileName = crashId+"-mvar.report.pdf";
 		// Set the content type and attachment header.
-		response.addHeader("Content-disposition", "attachment;filename=merge.pdf");
+		response.addHeader("Content-disposition", "attachment;filename="+fileName);
 		response.setContentType("application/pdf");
 		response.setContentLength(outputStream.toByteArray().length);
 
